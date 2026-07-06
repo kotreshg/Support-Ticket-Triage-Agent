@@ -1,0 +1,62 @@
+[
+    {
+        "id": "TKT-001",
+        "subject": "Server completely down!",
+        "body": "Our production database is unreachable. All our customers are getting 500 errors. We need help immediately!",
+        "triage_result": {
+            "category": "Technical Issue",
+            "urgency": "Critical",
+            "confidence_score": 1.0,
+            "routing": "Engineering",
+            "reasoning": "The production database is unreachable, causing customer-facing errors and potential revenue loss, which is a critical technical issue."
+        }
+    },
+    {
+        "id": "TKT-002",
+        "subject": "How to change my password?",
+        "body": "Hi, I forgot my password and the reset link isn't arriving in my email. Can someone assist?",
+        "triage_result": {
+            "category": "Account Access",
+            "urgency": "Medium",
+            "confidence_score": 0.95,
+            "routing": "Customer Success",
+            "reasoning": "The user is experiencing issues with password reset and account access, which is handled by Customer Success."
+        }
+    },
+    {
+        "id": "TKT-003",
+        "subject": "Billing discrepancy",
+        "body": "I was charged $49.99 this month but my plan is only $29.99. Please refund the difference.",
+        "triage_result": {
+            "category": "Billing",
+            "urgency": "Medium",
+            "confidence_score": 0.95,
+            "routing": "Billing Support",
+            "reasoning": "The user reports a clear discrepancy between their expected plan cost and the amount they were charged."
+        }
+    },
+    {
+        "id": "TKT-004",
+        "subject": "Feature request: Dark mode",
+        "body": "It would be really cool if your dashboard had a dark mode. My eyes hurt at night.",
+        "triage_result": {
+            "category": "Feature Request",
+            "urgency": "Low",
+            "confidence_score": 0.95,
+            "routing": "Product Team",
+            "reasoning": "The user is clearly requesting a new feature, dark mode, for the dashboard."
+        }
+    },
+    {
+        "id": "TKT-005",
+        "subject": "System glitch maybe?",
+        "body": "Sometimes when I click the blue button, it does a weird thing, but I can't really explain it. Just thought you should know.",
+        "triage_result": {
+            "category": "Unclear",
+            "urgency": "Low",
+            "confidence_score": 0.4,
+            "routing": "Human Review",
+            "reasoning": "The ticket provides insufficient detail to accurately categorize or troubleshoot the reported issue."
+        }
+    }
+]

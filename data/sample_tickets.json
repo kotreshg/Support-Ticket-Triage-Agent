@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TKT-001",
+    "subject": "Server completely down!",
+    "body": "Our production database is unreachable. All our customers are getting 500 errors. We need help immediately!"
+  },
+  {
+    "id": "TKT-002",
+    "subject": "How to change my password?",
+    "body": "Hi, I forgot my password and the reset link isn't arriving in my email. Can someone assist?"
+  },
+  {
+    "id": "TKT-003",
+    "subject": "Billing discrepancy",
+    "body": "I was charged $49.99 this month but my plan is only $29.99. Please refund the difference."
+  },
+  {
+    "id": "TKT-004",
+    "subject": "Feature request: Dark mode",
+    "body": "It would be really cool if your dashboard had a dark mode. My eyes hurt at night."
+  },
+  {
+    "id": "TKT-005",
+    "subject": "System glitch maybe?",
+    "body": "Sometimes when I click the blue button, it does a weird thing, but I can't really explain it. Just thought you should know."
+  }
+]
