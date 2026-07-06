@@ -80,3 +80,10 @@ The system prompt strictly enforces the following decision boundaries:
 *   **Model Choice:** I opted for Google's `gemini-2.5-flash` model with `temperature=0.0`. This provides zero-cost developer API access, incredibly fast latency, and highly deterministic reasoning, which is essential for consistent data classification.
 *   **JSON Enforcement:** I used the native Google GenAI configuration parameter `response_mime_type="application/json"`. This completely forces a strict, structurally predictable JSON return string directly from the LLM, bypassing the need for heavy external parsing frameworks.
 *   **Limitations/Future Work:** Currently, the agent processes tickets synchronously (one by one in a loop). With more time, I would implement concurrent batching to process tickets at a higher scale. Additionally, I would transition this to run over an actual database (like SQLite) rather than flat JSON text files.
+
+
+## 6. How I Verified the Output (Manual Testing)
+I validated the core business logic of the triage system by evaluating the sample tickets:
+* Verified that billing disputes are correctly categorized into `Billing` and routed to the `Billing Support` team.
+* Confirmed that system-down alerts successfully escalate to `Critical` urgency.
+* Verified that vague user inputs are safely caught, marked with a low confidence score, and routed to `Human Review`.
